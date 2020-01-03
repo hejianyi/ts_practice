@@ -39,7 +39,7 @@ function createSquare(config: SquareConfig): {color: string; area:number} {
 // around and void to valid not declare prop
 // let mySquare = createSquare({colour:'black'} as SquareConfig)
 let sqObj1 = {colour:'black'}
-let mySquare = createSquare(sqObj1)
+// let mySquare = createSquare(sqObj1)
 
 /** the porp just readonly,  use readonly before the prop name */
 interface Point {
@@ -55,4 +55,5 @@ let ar2: ReadonlyArray<number> = ar1
 let vr1 = ar2[1]
 let ar3 = ar2 as number[]
 
+/** interface to describe the type of function */
 
